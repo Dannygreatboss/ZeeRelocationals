@@ -1,0 +1,146 @@
+.cta-final.two {
+  background-color: #fff;
+  color: #000;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.hero .cta {
+  background: #000000;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero .cta:hover {
+  background: rgb(0, 0, 0);
+}
+
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cta-text {
+  flex: 1;
+  min-width: 300px;
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.cta-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.cta-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.cta-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInRight 1.5s ease-in-out;
+}
+
+.cta-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+  height: 100px;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-img {
+  width: 500px;
+  max-width: 90%;
+  margin-top: 2rem;
+  animation: float 4s ease-in-out infinite;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+  .comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .comparison-item {
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .comparison-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .comparison-item .text {
+    padding: 1rem;
+  }
+</style>
