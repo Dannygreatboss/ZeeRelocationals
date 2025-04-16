@@ -193,6 +193,90 @@
       display: inline-block;
     }
 
+    .promise-section {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.promise-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.promise-section .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promise-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; /* space between items */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.promise-item {
+  flex: 1;
+  min-width: 200px;
+  padding: 1rem;
+}
+
+.promise-item img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.promise-item p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+🔧 Optional: Make it responsive
+If you want it to look great on mobile too:
+
+css
+Copy
+Edit
+@media (max-width: 768px) {
+  .promise-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promise-item {
+    margin-bottom: 2rem;
+  }
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+
     .hero h2 {
       margin-bottom: 1rem;
     }
@@ -370,7 +454,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".comparison-item").forEach(item => {
       item.addEventListener("click", () => {
-        window.location.href = "#quote";
+        window.location.href = "quote.html";
       });
     });
   });
@@ -391,7 +475,7 @@
           <li><h3><a href="#about">About Us</a></h3></li>
           <li><h3><a href="#reviews">Reviews</a></h3></li>
           <li><h3><a href="#contact">Contact Us</a></h3></li>
-          <li><h3><a href="#quote" class="cta">Get a Quote</a></h3></li>
+          <li><h3><a href="quote.html" class="cta">Get a Quote</a></h3></li>
         </ul>
       </nav>
     </div>
@@ -413,7 +497,7 @@
   <section id="home" class="hero">
     <h1 style="font-size: 50px;" class="hero-title">You Deserve Movers Who Treat You <br>Like a Friend.</h1>
     <h2>We Show up, We Listen, We Respect Your Time.</h2>
-    <a href="#quote" class="cta">Get a Quote</a>
+    <a href="quote.html" class="cta">Get a Quote</a>
   </section>
   
 
@@ -442,7 +526,7 @@
               customized plan that fits your timeline and budget. We understand that our success is built on 
               the relationships we foster. That's why we strive to exceed expectations, delivering not just 
               services, but peace of mind. Contact us today, let’s get you moving.</p>
-          <a href="#quote" class="cta" style="margin-top: 1.5rem; display: inline-block;"><strong>Get a Free Quote</strong></a>
+          <a href="quote.html" class="cta" style="margin-top: 1.5rem; display: inline-block;"><strong>Get a Free Quote</strong></a>
         </div>
         <div class="cta-image">
           <img src="Asset/2000.jpg" alt="Hero visual" class="hero-img"/>
@@ -456,42 +540,42 @@
       <div class="comparison-grid">
         <div class="comparison-item">
           <img src="Asset/4433.jpg" alt="Scam">
-          <a href="#quote" class="quote-hover">Get a Quote</a>
+          <a href="quote.html" class="quote-hover">Get a Quote</a>
           <div class="text">
             <h3><strong>PACKING AND UNPACKING</strong></h3>
           </div>
         </div>
         <div class="comparison-item">
           <img src="Asset/100.jpg" alt="Phone Call">
-          <a href="#quote" class="quote-hover">Get a Quote</a>
+          <a href="quote.html" class="quote-hover">Get a Quote</a>
           <div class="text">
             <h3><strong>LOADING AND UNLOADING</strong></h3>
           </div>
         </div>
         <div class="comparison-item">
           <img src="Asset/Untitled-111.jpg" alt="Dish">
-          <a href="#quote" class="quote-hover">Get a Quote</a>
+          <a href="quote.html" class="quote-hover">Get a Quote</a>
           <div class="text">
             <h3><strong>RESIDENTIAL AND OFFICE MOVES</strong></h3>
           </div>
         </div>
         <div class="comparison-item">
           <img src="Asset/98009.jpg" alt="Loading Truck">
-          <a href="#quote" class="quote-hover">Get a Quote</a>
+          <a href="quote.html" class="quote-hover">Get a Quote</a>
           <div class="text">
             <h3><strong>STAGING FOR INTERIOR DESIGN</strong></h3>
           </div>
         </div>
         <div class="comparison-item">
           <img src="Asset/88877.jpg" alt="Garage">
-          <a href="#quote" class="quote-hover">Get a Quote</a>
+          <a href="quote.html" class="quote-hover">Get a Quote</a>
           <div class="text">
             <h3><strong>FURNITURE DELIVERY</strong></h3>
           </div>
         </div>
         <div class="comparison-item">
           <img src="Asset/0099009.jpg" alt="New Service">
-          <a href="#quote" class="quote-hover">Get a Quote</a>
+          <a href="quote.html" class="quote-hover">Get a Quote</a>
           <div class="text">
             <h3><strong>NEW SERVICE</strong></h3>
           </div>
@@ -499,12 +583,31 @@
       </div>
     </section>
     
-  <!-- <section class="features">
-    <div>Real care, no shortcuts</div>
-    <div>Start-to-finish support</div>
-    <div>Transparent pricing</div>
-  </section> -->
-
+    <section class="promise-section">
+      <div class="container">
+        <h2><strong>Our Promise</strong></h2>
+        <p style="font-size: 20px;" class="subtitle"><strong>We’re not perfect—but we show up strong, move with purpose, and own the process.</strong></p>
+        
+        <div class="promise-items">
+          <div class="promise-item">
+            <img src="Asset/CA.jpg" alt="Transparent Pricing Icon">
+            <p>Transparent<br>pricing</p>
+          </div>
+          <div class="promise-item">
+            <img src="Asset/HA.jpg" alt="Real Care Icon">
+            <p>Real care,<br>no shortcuts</p>
+          </div>
+          <div class="promise-item">
+            <img src="Asset/HH.jpg" alt="Support Icon">
+            <p>Start-to-finish<br>support</p>
+          </div>
+        </div>
+    
+        <p class="cta-text"><strong>Moving can be better. We are here to prove it.</strong></p>
+        <a href="quote.html" class="cta-button"><strong>GET A QUOTE</strong></a>
+      </div>
+    </section>
+    
 
   <section id="reviews" class="comparison" style="background-color: #f2f2f2; padding: 3rem 1rem; overflow: hidden;">
     <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #000;"><strong>What Our Customers Say</strong></h2>
@@ -567,7 +670,7 @@
   <section style="text-align: center; padding: 4rem 1rem; background-color: #f9f9f9;">
     <h2 style="font-size: 2.5rem; font-weight: 800; margin: 0; color: #000000;">Ready To Move</h2>
     <p style="font-size: 2rem; margin-top: 0.5rem; color: #000000;">Into Your New Home?</p>
-    <a href="#quote" style="
+    <a href="quote.html" style="
         display: inline-block;
         margin-top: 1.5rem;
         padding: 0.75rem 2rem;
