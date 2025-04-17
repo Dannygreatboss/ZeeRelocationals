@@ -93,32 +93,42 @@
   
 
   <div class="container">
-    <h1 style="color: black;">Request Your Free Moving Quote</h1>
+    <h1 style="color: black;"><strong>Request Your Free Moving Quote</strong></h1>
     <form id="quoteForm">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required />
-
+    
       <label for="email">Email Address</label>
       <input type="email" id="email" name="email" required />
-
+    
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone" required />
-
+    
       <label for="move-date">Preferred Moving Date</label>
       <input type="date" id="move-date" name="move-date" />
-
+    
+      <label for="zip-from">Zip Code From</label>
+      <input type="text" id="zip-from" name="zip-from" placeholder="e.g. 97201" required />
+    
+      <label for="zip-to"> To</label>
+      <input type="text" id="zip-to" name="zip-to" placeholder="e.g. 98661" required />
+    
       <label for="move-type">Type of Move</label>
       <select id="move-type" name="move-type">
-        <option value="home">Home</option>
-        <option value="office">Office</option>
-        <option value="long-distance">Long Distance</option>
+        <option value="Packing and Unpacking">Packing and Unpacking</option>
+        <option value="Loading and Unloading">Loading and Unloading</option>
+        <option value="House and Apartment">House and Apartment</option>
+        <option value="Office Moves">Office Moves</option>
+        <option value="Staging for Interior Design">Staging for Interior Design</option>
+        <option value="Furniture Delivery">Furniture Delivery</option>
       </select>
-
+    
       <label for="details">Additional Details</label>
       <textarea id="details" name="details" placeholder="Tell us more about your move..."></textarea>
-
+    
       <button type="submit">Submit Quote Request</button>
     </form>
+    
   </div>
 
   <footer>
